@@ -79,11 +79,8 @@ function buildCharts(sample) {
 
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     let otus_ids = result.otu_ids;
-    //console.log(otus_ids);
     let otus_labels = result.otu_labels;
-    //console.log(otus_labels);
     let sample_values = result.sample_values;
-    //console.log(sample_values);
     
     // Delivery 2 Bubble chart
     let bubbleID = result.otu_ids;
