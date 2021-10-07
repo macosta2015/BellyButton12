@@ -72,3 +72,26 @@ var doubled = numbers.map(function(num){
 });
 console.log(doubled);
 
+
+//////////////////////
+var integers = [0,1,2,3,4,5];
+var slice1 = integers.slice(0,2);
+
+var words = ['seal', 'dog', 'scorpion', 'orangutan', 'salamander'];
+words.slice(3, );
+
+var topFiveCityNames = topFiveCities.map(city => city.City);
+var topFiveCityGrowths = topFiveCities.map(city => parseInt(city.Increase_from_2016));
+
+var trace = {
+    x: topFiveCityNames,
+    y: topFiveCityGrowths,
+    type: "bar"
+  };
+  var data = [trace];
+  var layout = {
+    title: "Most Rapidly Growing Cities",
+    xaxis: { title: "City" },
+    yaxis: { title: "Population Growth, 2016-2017"}
+  };
+  Plotly.newPlot("bar-plot", data, layout);
