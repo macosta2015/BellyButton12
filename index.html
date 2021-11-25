@@ -7,95 +7,71 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body>
-
-  <div class="container">
-    <div class="row">
-      <!-- Responsible -->
-      <div class="col-xs-18 col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
-    <div class="row">
-      <!-- Responsible -->
-      <div class="col-xs-12 col-md-2">
+<body style="background-color:rgb(159, 167, 241);">
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center" style="background-image: url(https://www.ox.ac.uk/sites/files/oxford/styles/ow_medium_feature/s3/field/field_image_main/Bacteria%20banner.jpg?itok=OXWbtsga);">  >
+          <font color="white">  
+            <h1>Belly Button Biodiversity Dashboard</h1>
+            <p>Use the interactive charts below to explore the dataset</p>
+          </font>
+        </div>
+      </div>    
+      <div class = "col-md-4"></div>
+      <div class="row">
+      <div class="col-md-4">
         <div class="well">
-          <h5>Test Subject ID No.:</h5>
+          <h4>Test Subject ID No.:</h4>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
+        </div>
+      </div>
+      <div class = "col-md-4"></div>
+      <div class = "row">
+          <div class="col-md-4">    
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-      <!-- Responsible -->
-      <div class="col-xs-12 col-md-5">
-        <div id="bar"></div>
-        <b>List of the most bacterias founded in the belly button of this person</b> 
-        <p>There are more than 65 types of micro-organisms (bacteria) living in the belly button of an average person.</p>
-      </div>
-      <!-- Responsible -->
-      <div class="col-xs-12 col-md-5">
-        <div id="gauge"></div>
-        <b>How many times the person wash the belly button</b> 
-        <p>In fact, it also accumulates remnants of soap, dirt, debris, sweat and dead cells.</p>
+          </div>
       </div>
     </div>
-    <div class="row">
-      <!-- Responsible -->
-      <div class="col-xs-18 col-sm-6 col-md-12">
-        <div id="bubble"></div>
-        <b>Wide view</b> 
-        <p>This graph allows to visualize the totality of bacteria colonies in the sample</p>
+      <div class="col-md-6">
+        <div id="bar"></div>
       </div>
-
-    <div class="row">
-      <!-- Responsible -->
-      <div class="col-xs-9 col-md-6">
-        <div class="info">
-          <h3>Diferent shapes of belly button</h3> 
-          <img src="https://www.thesun.co.uk/wp-content/uploads/2018/08/LB-COMP-BELLY-v2AGAIN.jpg?strip=all&quality=100&w=750&h=500&crop=1" 
-            width="100%"/>
-          <h6>Image of internet: https://www.thesun.co.uk</h6>  
-
-
-        </div>
+      <div class="col-md-6">
+        <div id="gauge"></div>
       </div>
-      <!-- Responsible -->
-      <div class="col-xs-9 col-md-6">
-        <div class="info">
-          <h3>Facts about the Belly Button</h3> 
-          <b>Fact #1</b> 
-          <p>Both men and women may develop yeast infection in the belly button. Some babies may also develop this infection if the mother has yeast infection at the time of delivery.</p>
-          <b>Fact #2</b> 
-          <p>How to know that you have yeast infection in your belly button? Well, here are some symptoms: redness, itching sensation, bad smell, pain, or discharge. Your doctor can treat it.</p>
-          <b>Fact #3</b> 
-          <p>You can clean it with a cotton swab. Dip it in a few drops of alcohol and gently wipe the dirt inside the belly button. Too much of alcohol may dry it up; so use only a drop or two.</p>
-          <b>Fact #4</b> 
-          <p>TYes, both men and women respond to a stimulative touch at the belly button. It is an erogenous area. Stimulating there might indirectly stimulate the privates.</p>
-          <b>Fact #5</b> 
-          <p>Though it is a colony of bacteria, some types of bacteria living there are not harmful to your body.</p>
-        </br>
-        <h6>Info taken from internet please, for more info visit:</h6>   
-        <a href="https://www.boldsky.com/health/wellness/2017/facts-about-belly-button/articlecontent-pf146072-110621.html">boldsky.com</a>
-        </div>
+    
+    <div class="row">
+      <div class="col-md-12">
       </div>
     </div>    
+    <br>
 
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
     </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <p> <h4>The interactive charts help us visualize the different bacteria collected from the volunteers. Start the analysis by using the drop-down menu to select a volunteer's id.  By selecting this id, the bar chart will be updated and will show data from the top 10 bacteria cultures.  The gauge chart shows the washing frequency giving the number of scrubs per week.  The size of bubbles in the bubble chart shows the sample’s concentration and biodiversity of the bacteria.
+      </h4> </p>
   </div>
+  </div>
+</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="static/js/charts.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="plots.js"></script>
+  </body>
 </body>
 
 </html>
